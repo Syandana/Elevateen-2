@@ -1,0 +1,34 @@
+/* SCSS */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: .5em .5em;
+}
+
+.topics {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.topics #top {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 1em;
+  border: 1px solid red;
+}
+/*# sourceMappingURL=topics.css.map */

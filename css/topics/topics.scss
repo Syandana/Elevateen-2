@@ -1,0 +1,83 @@
+$colors: (
+    primary: #ffffff,
+    primary-light: #f4f4f4,
+    primary-dark: #a4a4a4,
+    accent: red,
+    secondary: #f4f4f4,
+    font-def: white,
+    font-title: #626262,
+    font-desc: #818181,
+);
+
+@function color($color-name) {
+    @return map-get($colors ,$color-name);
+  }
+
+$mini: 720px;
+$med: 800px;
+$big: 1000px;
+
+@mixin mini {
+    @media (max-width: #{$mini}) {
+        @content;
+    }
+}
+
+@mixin med {
+    @media (max-width: #{$med}) {
+        @content;
+    }
+}
+
+@mixin big {
+    @media (max-width: #{$big}) {
+        @content;
+    }
+}
+
+$weight: (
+    thin: 100,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    semi-bold: 600,
+    bold: 700,
+    black: 900,
+);
+
+@function weight($weight-name) {
+    @return map-get($weight ,$weight-name);
+  }
+
+/* SCSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: weight(semi-bold);
+    font-size: 1.5em;
+    padding: .5em .5em;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+
+    #top {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: weight(semi-bold);
+        font-size: 1em;
+        padding: 1em;
+
+        border: 1px solid red;
+    }
+}

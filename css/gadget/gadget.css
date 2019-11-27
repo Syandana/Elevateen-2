@@ -1,0 +1,46 @@
+/* SCSS */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  padding: 2em 1em;
+}
+
+.heading h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  font-size: 5em;
+}
+
+.heading p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: gray;
+}
+
+.post1 {
+  padding: 0 1em 4em 1em;
+}
+
+.post1 a #image {
+  padding: 0 0 .5em 0;
+}
+
+.post1 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.post1 p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: gray;
+}
+/*# sourceMappingURL=gadget.css.map */
