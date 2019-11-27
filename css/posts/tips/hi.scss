@@ -60,18 +60,18 @@ body {
     background-color: white;
 
     .tips1 {
-        padding: 0 19.5em;
+        padding: 1em 19.5em;
 
         @include mini {
-            padding: 0 1em;
+            padding: 1em 1em;
         }
 
         @include med {
-            padding: 0 1em;
+            padding: 1em 1em;
         }
 
         @include big {
-            padding: 0 1em;
+            padding: 1em 1em;
         }
 
         h1 {

@@ -1,99 +1,81 @@
 $colors: (
-    primary: #ffffff,
-    primary-light: #f4f4f4,
-    primary-dark: #a4a4a4,
-    accent: red,
-    secondary: #f4f4f4,
-    font-def: white,
-    font-title: #626262,
-    font-desc: #818181,
+  primary: #ffffff,
+  primary-light: #f4f4f4,
+  primary-dark: #a4a4a4,
+  accent: red,
+  secondary: #f4f4f4,
+  font-def: white,
+  font-title: #626262,
+  font-desc: #818181
 );
 
 @function color($color-name) {
-    @return map-get($colors ,$color-name);
-  }
+  @return map-get($colors, $color-name);
+}
 
 $weight: (
-    thin: 100,
-    light: 300,
-    regular: 400,
-    medium: 500,
-    bold: 700,
-    black: 900,
+  thin: 100,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+  black: 900
 );
 
 @function weight($weight-name) {
-    @return map-get($weight ,$weight-name);
+  @return map-get($weight, $weight-name);
 }
 
 $font: (
-    Libre: 'Libre Bakerville',
-    Playfair: 'Playfair Display',
-    Montserrat: 'Montserrat',
+  Libre: "Libre Bakerville",
+  Playfair: "Playfair Display",
+  Montserrat: "Montserrat"
 );
 
 @function font($font-name) {
-    @return map-get($font ,$font-name);
+  @return map-get($font, $font-name);
 }
 /* SCSS */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: color(primary);
+  background-color: color(primary);
 
-    .nav {        
-        a {
-            text-decoration: none;
-            text-align: center;
-            justify-content: center;
-            padding: 1em 3em;
-            font-family: font(Montserrat);
-        }
-        
-        #left {
-            float: left;
-        }
-
-        #mid {
-            align-content: center;
-        }
-
-        #right {
-            float: right;
-        }
-        
-    }
-}
-
-.banner {
-    background-color: color(primary-dark);
-    height: 240px;
-    width: 655px;
-    margin: 2em 2em;
+  .banner {
+    padding: 1em;
 
     a img {
-        height: 240px;
-        width: 100vw;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .post1 {
+    padding: 0 1em 4em 1em;
+
+    a {
+        #image {
+            padding: 0 0 .5em 0;
+        }
+    }
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: weight(semi-bold);
+        font-size: 1em;
+        padding-bottom: .25em;
+    }
+    
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: weight(regular);
+        font-size: .75em;
+        color: gray;
     }
 }
 
-.button {
-    background-color: color(primary-dark);
-    height: 361px;
-    width: 655px;
-    margin: 2em 2em;
-
-    table{
-        border: none;
-    }
-    
-    #btn {
-        background-color: black;
-        width: 110px;
-        height: 110px;
-    }
 }

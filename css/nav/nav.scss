@@ -45,16 +45,16 @@ $font: (
 .nav {
     width: 100%;
     margin: 0;
-    padding: .25em 1em;
+    padding: 1em;
     position: sticky;
     top: 0;
     overflow: hidden;
     background-color: white;
-    box-shadow: 10px 0 3px grey;
+    box-shadow: 5px 0 5px grey;
 
     #button {
-        float: right;
-        padding: 1em 0 0 1em;
+        float: left;
+        padding: 0 .5em;
         color: black;
         text-decoration: none;
         text-align: center;

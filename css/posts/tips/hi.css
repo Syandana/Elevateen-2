@@ -10,25 +10,29 @@ body {
   background-color: white;
 }
 
+body .topbar {
+  padding: .5em 1em;
+}
+
 body .tips1 {
-  padding: 0 19.5em;
+  padding: 1em 19.5em;
 }
 
 @media (max-width: 720px) {
   body .tips1 {
-    padding: 0 1em;
+    padding: 1em 1em;
   }
 }
 
 @media (max-width: 800px) {
   body .tips1 {
-    padding: 0 1em;
+    padding: 1em 1em;
   }
 }
 
 @media (max-width: 1000px) {
   body .tips1 {
-    padding: 0 1em;
+    padding: 1em 1em;
   }
 }
 

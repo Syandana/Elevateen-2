@@ -10,55 +10,33 @@ body {
   background-color: #ffffff;
 }
 
-body .nav a {
-  text-decoration: none;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1em 3em;
-  font-family: "Montserrat";
+body .banner {
+  padding: 1em;
 }
 
-body .nav #left {
-  float: left;
+body .banner a img {
+  height: auto;
+  width: 100%;
 }
 
-body .nav #mid {
-  -ms-flex-line-pack: center;
-      align-content: center;
+body .post1 {
+  padding: 0 1em 4em 1em;
 }
 
-body .nav #right {
-  float: right;
+body .post1 a #image {
+  padding: 0 0 .5em 0;
 }
 
-.banner {
-  background-color: #a4a4a4;
-  height: 240px;
-  width: 655px;
-  margin: 2em 2em;
+body .post1 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  padding-bottom: .25em;
 }
 
-.banner a img {
-  height: 240px;
-  width: 100vw;
-}
-
-.button {
-  background-color: #a4a4a4;
-  height: 361px;
-  width: 655px;
-  margin: 2em 2em;
-}
-
-.button table {
-  border: none;
-}
-
-.button #btn {
-  background-color: black;
-  width: 110px;
-  height: 110px;
+body .post1 p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: .75em;
+  color: gray;
 }
 /*# sourceMappingURL=index.css.map */
