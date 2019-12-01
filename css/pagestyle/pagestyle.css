@@ -1,0 +1,71 @@
+/* SCSS */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  padding: 1em 1em;
+}
+
+.heading h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  font-size: 4em;
+}
+
+.heading p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: gray;
+}
+
+.post1 {
+  padding: 0 1em 4em 1em;
+}
+
+.post1 a #image {
+  padding: 0 0 .5em 0;
+  height: auto;
+  width: 100%;
+}
+
+.post1 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.post1 p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: gray;
+}
+
+.post2 {
+  padding: 0 1em 4em 1em;
+}
+
+.post2 a #image {
+  padding: 0 0 .5em 0;
+  height: auto;
+  width: 100%;
+}
+
+.post2 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.post2 p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: gray;
+}
+/*# sourceMappingURL=pagestyle.css.map */
