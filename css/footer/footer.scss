@@ -1,0 +1,47 @@
+$colors: (
+  primary: #ffffff,
+  primary-light: #f4f4f4,
+  primary-dark: #a4a4a4,
+  accent: red,
+  secondary: #f4f4f4,
+  font-def: white,
+  font-title: #626262,
+  font-desc: #818181
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$weight: (
+  thin: 100,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+  black: 900
+);
+
+@function weight($weight-name) {
+  @return map-get($weight, $weight-name);
+}
+
+$font: (
+  Libre: "Libre Bakerville",
+  Playfair: "Playfair Display",
+  Montserrat: "Montserrat"
+);
+
+@function font($font-name) {
+  @return map-get($font, $font-name);
+}
+
+footer {
+  text-align: center;
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: weight(regular);
+    font-size: 1em;
+    padding-bottom: .5em;
+  }
+}
