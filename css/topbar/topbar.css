@@ -10,4 +10,9 @@
 .topbar #right {
   padding-left: .5em;
 }
+
+.topbar #right img {
+  width: auto;
+  height: 2.1875em;
+}
 /*# sourceMappingURL=topbar.css.map */
