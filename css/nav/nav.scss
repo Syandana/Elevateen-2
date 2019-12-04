@@ -13,6 +13,14 @@ $colors: (
     @return map-get($colors ,$color-name);
   }
 
+  $big: 1000px;
+
+  @mixin big {
+    @media (min-width: #{$big}) {
+        @content;
+    }
+}
+
 $weight: (
     thin: 100,
     light: 300,
@@ -48,11 +56,14 @@ $font: (
     padding: 1em;
     position: sticky;
     top: 0;
-    overflow: hidden;
     background-color: white;
     box-shadow: 5px 0 5px grey;
     overflow: auto;
     white-space: nowrap;
+
+    @include big {
+        box-shadow: #f1f3f6;
+    }
 
     #button {
         display: inline-block;

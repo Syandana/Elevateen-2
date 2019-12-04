@@ -23,46 +23,55 @@
   color: gray;
 }
 
-.post1 {
+@media (min-width: 1000px) {
+  .posts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.posts .post1 {
   padding: 0 1em 4em 1em;
 }
 
-.post1 a #image {
+.posts .post1 a #image {
   padding: 0 0 .5em 0;
   height: auto;
   width: 100%;
 }
 
-.post1 h3 {
+.posts .post1 h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.5em;
 }
 
-.post1 p {
+.posts .post1 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1em;
   color: gray;
 }
 
-.post2 {
+.posts .post2 {
   padding: 0 1em 4em 1em;
 }
 
-.post2 a #image {
+.posts .post2 a #image {
   padding: 0 0 .5em 0;
   height: auto;
   width: 100%;
 }
 
-.post2 h3 {
+.posts .post2 h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.5em;
 }
 
-.post2 p {
+.posts .post2 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1em;

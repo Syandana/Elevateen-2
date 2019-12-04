@@ -62,14 +62,6 @@ body {
     .tips1 {
         padding: 1em 19.5em;
 
-        @include mini {
-            padding: 1em 1em;
-        }
-
-        @include med {
-            padding: 1em 1em;
-        }
-
         @include big {
             padding: 1em 1em;
         }

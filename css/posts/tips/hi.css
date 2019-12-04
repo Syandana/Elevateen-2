@@ -14,18 +14,6 @@ body .tips1 {
   padding: 1em 19.5em;
 }
 
-@media (max-width: 720px) {
-  body .tips1 {
-    padding: 1em 1em;
-  }
-}
-
-@media (max-width: 800px) {
-  body .tips1 {
-    padding: 1em 1em;
-  }
-}
-
 @media (max-width: 1000px) {
   body .tips1 {
     padding: 1em 1em;

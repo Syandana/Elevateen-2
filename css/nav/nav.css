@@ -13,12 +13,18 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  overflow: hidden;
   background-color: white;
   -webkit-box-shadow: 5px 0 5px grey;
           box-shadow: 5px 0 5px grey;
   overflow: auto;
   white-space: nowrap;
+}
+
+@media (min-width: 1000px) {
+  .nav {
+    -webkit-box-shadow: #f1f3f6;
+            box-shadow: #f1f3f6;
+  }
 }
 
 .nav #button {

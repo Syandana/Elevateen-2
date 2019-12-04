@@ -30,7 +30,7 @@ $big: 1000px;
 }
 
 @mixin big {
-    @media (max-width: #{$big}) {
+    @media (min-width: #{$big}) {
         @content;
     }
 }
@@ -57,6 +57,10 @@ $weight: (
     padding: 0;
 }
 
+body {
+
+}
+
 .heading {
     padding: 1em 1em;
 
@@ -74,53 +78,59 @@ $weight: (
     }
 }
 
+.posts {
+    @include big {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-.post1 {
-    padding: 0 1em 4em 1em;
-
-    a {
-        #image {
-            padding: 0 0 .5em 0;
-            height: auto;
-            width: 100%;
+    .post1 {
+        padding: 0 1em 4em 1em;
+    
+        a {
+            #image {
+                padding: 0 0 .5em 0;
+                height: auto;
+                width: 100%;
+            }
+        }
+    
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: weight(semi-bold);
+            font-size: 1.5em;    
+        }
+        
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: weight(regular);
+            font-size: 1em;
+            color: gray;
         }
     }
-
-    h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: weight(semi-bold);
-        font-size: 1.5em;    
-    }
     
-    p {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: weight(regular);
-        font-size: 1em;
-        color: gray;
-    }
-}
-
-.post2 {
-    padding: 0 1em 4em 1em;
-
-    a {
-        #image {
-            padding: 0 0 .5em 0;
-            height: auto;
-            width: 100%;
+    .post2 {
+        padding: 0 1em 4em 1em;
+    
+        a {
+            #image {
+                padding: 0 0 .5em 0;
+                height: auto;
+                width: 100%;
+            }
         }
-    }
-
-    h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: weight(semi-bold);
-        font-size: 1.5em;    
-    }
     
-    p {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: weight(regular);
-        font-size: 1em;
-        color: gray;
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: weight(semi-bold);
+            font-size: 1.5em;    
+        }
+        
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: weight(regular);
+            font-size: 1em;
+            color: gray;
+        }
     }
 }
